@@ -189,4 +189,4 @@ A complete log of my web development learning path, cloned from [Syknapse](https
 
 ### License
 
-[MIT License](https://github.com/Syknapse/My-Learning-Tracker/blob/master/LICENSE)
+[MIT License](https://github.com/lalawuhan/LearningLog/blob/master/LICENSE)
