@@ -1,19 +1,5 @@
 # Learning Log
 
-### Day 0: February 27, 2020
-
-##### (delete me or comment me out)
-
-**Today's Progress**: Placeholder
-
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
-
-**Link to work:** [Link](http://www.example.com)
-
-```
-Coding examples
-```
-
 ### Day 0: February 27, 2020 (Example 2)
 
 **Today's Progress**: Studied a data structure, created the log list and started my final project for the nanodegree
