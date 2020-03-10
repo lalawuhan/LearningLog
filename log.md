@@ -10,15 +10,12 @@
 
 **Today's Progress**: We worked on the FS module in node, which provides useful functions to interact with the file system.
 
+### Day 3: March 9, 2020
 
-### Day 2: March 2, 2020
+**Today's Progress**: Today we worked on integrating the twitter api into our ticker project. I went to codebar in the evening and decided to build a small webpage that uses reddit json to display the top 100 posts from today I learnt subreddit.
 
-**Today's Progress**: We worked on the request module in node. 
+**Thoughts** I underestimated my time in regards to blogging/logging during bootcamp. I want to be able to intergrate taking class notes and keeping track of my 'thinking pattern' when I am coding something.
 
-**Thoughts** I really enjoyed with Postman again, I feel like it is such a lovely interface to use when handlingrequests and responses from the console.
-I want to go back and work on a simple api to practice making more requests and responses, we should be using express soon so maybe I will do it then.
+**Screenshot of reddit project**
 
-**Link(s) to resources**
-
-1. [Anatomy of an HTTP Transaction](https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/)
-2. [Postman](https://www.postman.com/)
+![Example project](https://raw.githubusercontent.com/spicedacademy/vegeta-code/Thabi_Segoe/Week-5/handlebars-portfolio/projects/reddit-json/screenshot.png?token=AJHT4AURUJPO7EGVTEYDHWK6OCKHE)
