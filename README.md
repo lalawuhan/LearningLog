@@ -142,7 +142,7 @@ It is an almost exact copy of [Ginny Fahs'](https://twitter.com/ginnyfahs) ["Thi
 -   [x] Read a book about coding
 -   [x] Open your browser console
 -   [x] Get data from an API
--   [ ] Hide API keys from the public
+-   [x] Hide API keys from the public
 -   [x] Post a question on Stack Overflow
 -   [x] Push code to GitHub or GitLab or BitBucket
 -   [ ] Speak about something web development-related at an event
