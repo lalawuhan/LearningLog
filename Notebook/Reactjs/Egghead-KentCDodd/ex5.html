@@ -1,0 +1,20 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        //useful when you create things like tables that have a specific structure
+        //you can remove React.Fragment, and have an open and closing angle bracket
+        //<></>
+        const element = <React.Fragment>
+            <span>Hello</span> <span>Thabi</span>
+        </React.Fragment>
+        // react fragment, special type of object
+        // const helloElement = React.createElement('span', null, "Hello")
+        // const nameElement = React.createElement('span', null, "Thabi")
+        // const element = React.createElement(React.Fragment, null, helloElement, ' ', nameElement)
+
+        ReactDOM.render(element, document.getElementById('root'))
+    </script>
+</body>

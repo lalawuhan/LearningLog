@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document create element</title>
+</head>
+
+<body>
+    Place to append javascript generated dom elements
+    <div id="root"></div>
+    <script type="text/javascript">
+        const rootElement = document.getElementById('root') //get access to element by element apis
+        const element = document.createElement('div') // create our own element
+        element.textContent = "Hey there, Thabi" //add properties
+        element.className = 'container'
+        rootElement.appendChild(element) //append the element to the root
+    </script>
+</body>
+
+</html>

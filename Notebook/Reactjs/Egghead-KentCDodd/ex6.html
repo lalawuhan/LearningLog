@@ -1,0 +1,18 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        //we created a custom function component, accepts a props object
+        //and returns more react elements, starts with a capital letter
+        const Message = (props) => <div className="message">{props.children}</div>
+        const element = (
+            <div className="container">
+                <Message>Hey Girl</Message>
+                <Message>Bye Girl</Message>
+            </div>
+        )
+        ReactDOM.render(element, document.getElementById('root'))
+    </script>
+</body>

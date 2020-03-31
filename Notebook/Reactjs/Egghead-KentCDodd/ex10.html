@@ -1,0 +1,26 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        //rerendering a react app
+        //great for accessibility, because react keeps the focus element on
+
+        //this is just an example to show what react does
+        const rootElement = document.getElementById('root')
+
+        function tick() {
+            const time = new Date().toLocaleTimeString()
+            const element =
+                <div>
+                    <div>Hello</div>
+                    <input value={time} />
+                </div>
+            ReactDOM.render(element, rootElement)
+
+        }
+        tick()
+        setInterval(tick, 1000)
+    </script>
+</body>

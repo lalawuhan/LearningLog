@@ -1,0 +1,14 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const rootElement = document.getElementById('root')
+        const children = 'Hello Thabi'
+        const props = { children, className } // you can spread props
+        const className = 'container'
+        const element = <div id='app-root' {...props} className="not-container" /> //whatever comes last, is the one that comes through
+        ReactDOM.render(element, rootElement)
+    </script>
+</body>

@@ -1,0 +1,55 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        .box {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .box--large {
+            width: 270px;
+            height: 270px;
+        }
+
+        .box--medium {
+            width: 180px;
+            height: 180px;
+        }
+
+        .box--small {
+            width: 90px;
+            height: 90px;
+        }
+    </style>
+
+    <script type="text/babel">
+        //style react componenets with className and inline Styles
+        //creating components, seperates user code from styling concerns of a specific component
+        function Box({ className = '', style, size, ...rest }) {
+            const sizeClassName = size ? `box--${size}` : ''
+            //spread of props creates an override of className prop
+            //return <div className="box" {...props} />
+            return <div className={`box ${className}${sizeClassName}`}
+                style={{ fontStyle: 'italic', ...style }}
+                {...rest} />
+        }
+
+        const element = (
+            <div>
+                <Box size="small" style={{ backgroundColor: 'lightblue' }}> small lightblue box </Box>
+                <Box size="medium" style={{ backgroundColor: 'pink' }}> small lightblue box </Box>
+                <Box size="large" style={{ fontStyle: 'italic', backgroundColor: 'orange' }}> small lightblue box </Box>
+
+            </div>
+
+        )
+
+        ReactDOM.render(element, document.getElementById('root'))
+    </script>
+</body>

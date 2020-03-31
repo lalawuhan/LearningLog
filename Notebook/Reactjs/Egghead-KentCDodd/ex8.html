@@ -1,0 +1,25 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        //Using interpolation in JSX
+        //need to have expressons inside of these{}, cant put for loops, if statements etc
+        function CharacterCount({ text }) {
+            return (
+                <div>
+                    {`The text "${text}" has `}
+                    {text.length ? <strong>{text.length}</strong> : 'no'}
+                    {' characters'}</div>
+            )
+        }
+        const element = (
+            <>
+                <CharacterCount text="Hello There" />
+                <CharacterCount text='' />
+            </>
+        )
+        ReactDOM.render(element, document.getElementById('root'))
+    </script>
+</body>

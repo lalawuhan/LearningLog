@@ -1,0 +1,19 @@
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const rootElement = document.getElementById('root')
+        const element = <div className="container">
+            Hi Thabi, how are you today?
+        </div>
+        // const element = React.createElement('div', {
+        //     className: 'container',
+        //     children: ['Hey Thabi', 'Hey Jonathan']
+
+        // })
+        console.log(element)
+        ReactDOM.render(element, rootElement)
+    </script>
+</body>

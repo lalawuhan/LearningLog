@@ -1,0 +1,40 @@
+<!-- Validate Custom React Component Props with PropTypes -->
+
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/prop-types@15.6/prop-types.js"></script>
+    <script type="text/babel">
+        //proptypes is so common there is an npm package
+        const rootElement = document.getElementById('root')
+        function SayHello({ firstName, lastName }) {
+            return (
+                <div>
+                    Hello {firstName}{lastName}!
+                </div>
+            )
+        }
+        //creates a global variable called PropTypes, No need for the below code
+        //if you want it to apply to all, make sure you add isRequired
+        /* const PropTypes = {
+            string(props, propName, componentName) {
+                if (typeof props[propName] !== 'string') {
+                    return new Error(`Hey the component ${componentName} needs the prop ${propName} to be a string, but you passed a ${typeof props[propName]}`)
+                }
+            }
+        } */
+
+        //in production, proptypes are not applied
+
+        //babel-plugin-transform-react-remove-prop-types : if you want to remove proptypes from your source code
+        SayHello.propTypes = {
+            firstName: PropTypes.string.isRequired,
+            lastName: PropTypes.string.isRequired
+        }
+        const element = <SayHello firstName={false} />
+
+        ReactDOM.render(element, document.getElementById('root'))
+    </script>
+</body>
