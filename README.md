@@ -55,7 +55,7 @@
 | ![In Progress][in progress] |          | [Eloquent JavaScript]                          |      [Marijn Haverbeke]       |
 |   ![Completed][completed]   | Nov 2019 | M220JS: MongoDB for Javascript Developers      |                               |
 |   ![Completed][completed]   | 2020     | Front-End Web Developer Nanodegree             |            Udacity            |
-|   ![Completed][completed]   | Nov 2019 | [The Beginner's Guide to Reactjs]              | [Kent C Dodds] - [egghead.io] |
+|   ![Completed][completed]   | Apr 2020 | [The Beginner's Guide to Reactjs]              | [Kent C Dodds] - [egghead.io] |
 |   ![Completed][completed]   |          | [JavaScript and React for Developers]          | [Cassidy Williams] - [Udemy]  |
 | ![In Progress][in progress] |          | [Front End Development]                        |       [Free Code Camp]        |
 | ![In Progress][in progress] |          | Spiced Academy Full Stack certification        |                               |
