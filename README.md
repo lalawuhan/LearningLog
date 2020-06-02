@@ -151,8 +151,8 @@ It is an almost exact copy of [Ginny Fahs'](https://twitter.com/ginnyfahs) ["Thi
 -   [x] Deploy a project
 -   [ ] Ship your project to a store
 -   [ ] Contribute to open source
--   [ ] Get paid to code
--   [ ] When people ask what you do, respond saying you’re a developer :)
+-   [x] Get paid to code
+-   [x] When people ask what you do, respond saying you’re a developer :)
 
 ---
 
