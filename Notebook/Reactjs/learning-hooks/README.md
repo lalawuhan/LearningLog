@@ -1,14 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
 ## Learning hooks
 
 - [Original documentation is great](https://reactjs.org/docs/hooks-intro.html)
@@ -51,3 +40,14 @@ Hooks are functions that let you "hook into" React state and lifecycle methods. 
 - Each call to a hook has isolated state, you can use the same custom Hook twice in a component
 - If a function name starts with `use` and calls other hooks, we say it is a custom Hook. The naming convention helps the linter plugin find bugs in the code
 - You can write custom hooks that cover a wider range of use cases like form handling, timers etc
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
