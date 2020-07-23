@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 
 const useScroll = () => {
-  const [scrollVertical, setScrollVertical] = useState();
+  const [scrollVertical, setScrollVertical] = useState(0);
   const handleVerticaScroll = () => {
-    if (window.pageYOffset !== 0) {
-      setScrollVertical(window.pageYOffset);
-    }
+    setScrollVertical(window.pageYOffset);
   };
   useEffect(() => {
     window.addEventListener("scroll", handleVerticaScroll);
