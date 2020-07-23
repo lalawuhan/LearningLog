@@ -5,7 +5,7 @@ const useInterval = (callback, wait) => {
   useEffect(() => {
     //everytime it renders save the latest callback ti the current one
     intervalRef.current = callback;
-  });
+  }, [callback]);
   useEffect(() => {
     function tick() {
       intervalRef.current();
