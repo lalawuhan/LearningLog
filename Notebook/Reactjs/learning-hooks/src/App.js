@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from "react";
 import useScroll from "./useScroll";
 import useWindowDimensions from "./useWindowDimensions";
-
+import useInterval from "./useInterval";
 function App() {
-  console.log("window dimensions", useWindowDimensions());
   const scrollPos = useScroll();
   const widowDimensions = useWindowDimensions();
-  console.log("app.js wd", widowDimensions);
+  const [count, setCount] = useState(0);
+  const [wait, setWait] = useState(2000);
+  useInterval(() => {
+    setCount(count + 1);
+  }, wait);
+  function handleWait(e) {
+    setWait(Number(e.target.value));
+  }
   const box1 = {
     position: "fixed",
     top: 0,
@@ -20,6 +26,20 @@ function App() {
     width: "50%",
     backgroundColor: "#B0B8B4FF",
   };
+  const textStyle = {
+    borderRadius: "50%",
+    width: count / 100 + "px",
+    height: count / 100 + "px",
+    backgroundColor: "red",
+    zIndex: "-1",
+  };
+  const slowTimer = (e) => {
+    e.preventDefault();
+    if (wait !== null) {
+      setWait(null);
+    }
+    setWait(2000);
+  };
   return (
     <div className="App">
       <div style={{ height: 5000 }}>
@@ -32,7 +52,15 @@ function App() {
             </>
           ))}
         </div>
-        <div style={{ height: scrollPos, ...box2 }}></div>
+        <div style={{ height: scrollPos, ...box2 }}>
+          <form onSubmit={slowTimer}>
+            <h1>{count}</h1>
+            <input value={wait} onChange={handleWait} />
+            <button type="submit">Slow down</button>
+          </form>
+
+          <div style={textStyle}> </div>
+        </div>
       </div>
     </div>
   );
